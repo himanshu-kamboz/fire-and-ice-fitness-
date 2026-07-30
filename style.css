@@ -17,7 +17,7 @@
 }
 
 #nav-icons {
-    padding-top: 20px ;
+    padding-top: 20px;
     width: 80%;
 }
 
@@ -26,10 +26,13 @@
 }
 
 #nav-icons li {
+    padding: 5px;
+    border-radius: 8px;
     list-style: none;
 }
 
 #nav-icons a {
+    letter-spacing: 2px;
     color: white;
     text-decoration: none;
 }
@@ -37,5 +40,16 @@
 
 #nav-icons ul {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
+}
+
+.active {
+    background:linear-gradient(135deg,#efa937,#b34806,#FF7A00);
+}
+
+#banner-section {
+    height: 700px;
+    width: 100%;
+    background-image: url(banner.png);
+    background-color: blue;
 }
