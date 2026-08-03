@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
 }
 
 html {
@@ -296,3 +297,99 @@ html {
     margin-top: 10px;
 }
 
+.slider-track {
+    display: flex;
+}
+
+#reviews-section {
+    margin: 50px 0;
+}
+
+.reviews-section {
+    width: 100%;
+    overflow: hidden;
+    padding: 50px;
+
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    gap: 25px;
+    width: calc(350px * 6);
+    animation: scroll 20s linear infinite;
+}
+
+.card-review {
+    width: 450px;
+    height: 290px;
+    padding: 10px;
+    background: #101010;
+    border-radius: 15px;
+    border: 1px solid #222;
+    flex-shrink: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-review img {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #d74f00;
+    margin-bottom: 15px;
+}
+
+.stars {
+    color: #d74f00;
+}
+
+.role {
+    font-size: 18px;
+    margin: 10px 20px;
+}
+
+.review {
+    opacity: .6;
+}
+
+.image-div {
+    display: flex;
+
+    gap: 50px;
+}
+
+.card-review h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    
+}
+
+.card-review p {
+    color: white;
+    letter-spacing: 1px;
+}
+
+
+@keyframes scroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-350px * 3 - 75px));
+    }
+
+}
+
+.slider-track:hover {
+    animation-play-state: paused;
+}
